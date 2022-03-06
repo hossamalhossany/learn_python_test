@@ -20,5 +20,3 @@ for i in list_original:
 
 print(f'list_2 = {list_2} \n')
 
-
-
