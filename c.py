@@ -16,7 +16,7 @@ print(f'\nlist_original =  {list_original} \n ')
 sort_list =[]
 
 for i in list_original:
-    if i.startswith('a') or i.startswith('A'):
+    if i.startswith(('a','A')):
         sort_list.append(i)
 
 
