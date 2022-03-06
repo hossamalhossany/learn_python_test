@@ -8,15 +8,24 @@
 # #OutPut
 # ["aml","amr","amal","ayman","alsayed","Anas","Ahmed","Ameer"]
 
+
 list_original = ["Ameer","alsayed","Mahmoud","Ahmed","ayman","Israa","Anas","amal","amr","aml"]
 print(f'\nlist_original =  {list_original} \n ')
 
 
-list_2 =[]
+sort_list =[]
 
 for i in list_original:
     if i.startswith('a') or i.startswith('A'):
-        list_2.append(i)
+        sort_list.append(i)
 
-print(f'list_2 = {list_2} \n')
+
+def lenght_item(l):
+    return len(l)
+
+sort_list.sort(key=lenght_item)
+
+print(f'list_2 = {sort_list} \n')
+
+
 
