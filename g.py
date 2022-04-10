@@ -1,3 +1,5 @@
-from datetime import date
+from datetime import datetime
 
-print(date.now().day)
+current_date = datetime.now()
+
+print(current_date.year, current_date.month, current_date.day)
